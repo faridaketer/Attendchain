@@ -12,76 +12,75 @@
 <body>
 
 <ul>
-  <li><a class="active" href="profile.html">FAREEDS</a></li>
+  <li><a class="active" href="profile.html">Attendchain</a></li>
   <li><a href="index.html">Home</a></li>
   <li style="float:right"><a href="/about">About</a></li>
   <li style="float:right"><a href="signup.html">Register</a></li>
   <li style="float:right"><a href="login.html">Login</a></li>
   <li style="float:right"><a href="/"></a></li>
 </ul>
-<h1>Your profile</h1>
-<h3>Upload Your credentials here:</h>
-<input></input>
-<br/>
-<br/>
-<div>
-<table>
-  <tr>
-    <th>Credential</th>
-    <th> Details</th>
-    <th>Type</th>
-    <th>Start date</th>
-    <th>End date</th>
-    <th>Source</th>
-    <th>Verified by:</th>
-  </tr>
-  <tr>
-    <td>Msc.</td>
-    <td>
-        Management
-        Information
-        Systems
-    </td>
-    <td>Degree</td>
-    <td>02.11.2008</td>
-    <td>No end
-        date
-    </td>
-    <td>Null</td>
-    <td>__</td>
-  </tr>
-  <tr>
-    <td>Msc.</td>
-    <td>
-        Management
-        Information
-        Systems
-    </td>
-    <td>Degree</td>
-    <td>02.11.2008</td>
-    <td>No end
-        date
-    </td>
-    <td>Null</td>
-    <td>__</td>
-  </tr>
-  <tr>
-    <td>Msc.</td>
-    <td>
-        Management
-        Information
-        Systems
-    </td>
-    <td>Degree</td>
-    <td>02.11.2008</td>
-    <td>No end
-        date
-    </td>
-    <td>Null</td>
-    <td>__</td>
-  </tr>
-
-</table>
+<h1 id="event">Event Creation</h1>
+<div class="container">
+  <form action="/action_page.php">
+  <h3>Enter event details</h3>
+    <div class="row">
+      <div class="col-25">
+        <label for="e_name">Event name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="e_name" name="ename" placeholder="Event name">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Date">Date</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Date">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Time">Time</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="l_name" name="lastname" placeholder="Time">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">venue</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="Aphitheatre">Aphitheatre</option>
+          <option value="park">Park</option>
+          <option value="Museum">Museum</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">More details</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Time">Sponsor</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="f_name" name="first_nane" placeholder="first Name">
+        <input type="text" id="l_name" name="last_name" placeholder="last Name">
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
 </div>
 
 </body>
